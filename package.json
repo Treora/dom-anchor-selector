@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel src -d lib",
     "watch": "babel src -d lib -w",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "postinstall": "postinstall-build lib"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -14,6 +15,7 @@
     "babel-preset-es2015": "^6.24.1"
   },
   "dependencies": {
-    "dom-anchor-text-quote": "^4.0.2"
+    "dom-anchor-text-quote": "^4.0.2",
+    "postinstall-build": "^3.0.1"
   }
 }
